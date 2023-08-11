@@ -12,11 +12,17 @@ import About3 from "./components/About3/About3";
 import ProjectDetails from './components/ProjectDetails/ProjectDetails'; // Import the ProjectDetails component
 import barotechImage from './assets/images/Barotech.png';
 import wasichana from './assets/images/wasichana.png';
-import portfolio from "./assets/images/portfolio.png"
+import portfolio from "./assets/images/portfolio.png";
+import { createAnalytics } from '@vercel/analytics';
 
 
 
 const App = () => {
+
+
+const analytics = createAnalytics({
+  projectId: 'prj_fz4lKXblwLKolOcYMNJTyhsSmAWp', // Replace with your Vercel Project ID
+});
   // Define the projects array
   const projects = [
     {
