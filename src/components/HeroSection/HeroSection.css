@@ -1,0 +1,122 @@
+/* HeroSection2.css */
+.hero-section2 {
+  background-color: #ffffff;
+}
+
+.hero-contentcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 600px;
+  margin-left: 10px;
+
+}
+
+.text {
+  margin-bottom: 30px;
+}
+
+.headline {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  animation: fadeInLeft 1s ease-out;
+}
+
+.sub-headline {
+  font-size: 26px;
+  color: #777;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  animation: fadeInLeft 1s ease-out 0.3s;
+}
+
+.contact-button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px; /* Make the button round */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add transform transition */
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 10px;
+  overflow: hidden; /* Hide overflow for rounded button */
+}
+
+.contact-button:hover {
+  background-color: #e58400;
+  transform: scale(1.1); /* Apply scale on hover for a slight animation */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Animation keyframes */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .hero-contentcontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .headline, .sub-headline, .contact-button {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .headline {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .sub-headline {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .contact-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-top: 15px;
+    border-radius: 8px; /* Reset border radius for smaller screens */
+  }
+
+  .image-container {
+    margin-top: 20px;
+  }
+}

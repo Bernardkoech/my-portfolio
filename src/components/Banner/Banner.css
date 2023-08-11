@@ -1,0 +1,22 @@
+.banner {
+    background-color: #ff9900;
+    color: #ffffff;
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  .banner-text {
+    animation: marquee 15s linear infinite;
+    background-color: #ff9900;
+    color: #ffffff;
+    white-space: nowrap;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

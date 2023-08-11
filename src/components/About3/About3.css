@@ -1,0 +1,136 @@
+/* About3.css */
+.about-section3 {
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.content-container3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.content3 {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  max-width: 600px;
+  margin-right: 10px;
+}
+
+.text3 {
+  margin-bottom: 30px;
+}
+
+.about-headline3,
+.about-subheadline3,
+.project-button3 {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.animate .about-headline3,
+.animate .about-subheadline3,
+.animate .project-button3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.about-headline3 {
+  font-size: 50px; /* Increase the font size */
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.about-subheadline3 {
+  font-size: 26px; /* Decrease the font size */
+  color: #777;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.project-button3 {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #ff9900;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.project-button3:hover {
+  background-color: #e58400;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.image-container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.image3 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Animation keyframes */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .content-container3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content3 {
+    text-align: center;
+  }
+
+  .about-headline3,
+  .about-subheadline3,
+  .project-button3 {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .about-headline3 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .about-subheadline3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .project-button3 {
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-top: 15px;
+    border-radius: 8px;
+  }
+
+  .image-container3 {
+    margin-top: 20px;
+  }
+}
