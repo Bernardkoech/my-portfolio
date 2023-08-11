@@ -38,7 +38,7 @@ const App = () => {
       name: 'My portfolio',
       description: 'My own portfolio app',
       image: portfolio,
-      website: 'https://www.project3.com',
+      website: 'https://bkoech.vercel.app/',
     },
   ];
 
